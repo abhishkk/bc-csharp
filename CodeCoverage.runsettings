@@ -14,6 +14,15 @@ Each element in the list is a regular expression (ECMAScript syntax). See http:/
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->
+            <!-- Match assembly file paths: -->
+            <ModulePaths>
+              <Include>
+                <ModulePath>.*crypto.*</ModulePath>
+              </Include>
+              <Exclude>
+                <ModulePath>.*nunit.*</ModulePath>
+              </Exclude>
+            </ModulePaths>
 
             <!-- Match assembly file paths: -->
 
