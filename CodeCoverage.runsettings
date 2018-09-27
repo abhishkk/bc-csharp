@@ -16,15 +16,6 @@ Included items must then not match any entries in the exclude list to remain inc
 -->
 
             <!-- Match assembly file paths: -->
-            <ModulePaths>
-              <Include>
-                <ModulePath>.*Crypto.*</ModulePath>
-              </Include>
-              <Exclude>
-                <ModulePath>.*Test.*</ModulePath>
-                <ModulePath>.*nunit.*</ModulePath>
-              </Exclude>
-            </ModulePaths>
 
           </CodeCoverage>
         </Configuration>
