@@ -34,7 +34,7 @@ steps:
   inputs:
     command: test
     projects: .\crypto\test\crypto.test.csproj
-    arguments: -c $(BuildConfiguration) --collect:"Code Coverage" -s $(System.DefaultWorkingDirectory)\CodeCoverage.runsettings /p:DebugType=portable
+    arguments: -c $(BuildConfiguration) --collect:"Code Coverage" --diag:"E:\bc-sharp\blabla.txt" -s $(System.DefaultWorkingDirectory)\CodeCoverage.runsettings /p:DebugType=portable
   displayName: Run Tests
   
 - task: PowerShell@2
